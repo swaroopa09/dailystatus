@@ -58,6 +58,7 @@
     justify-content: center;
 }
 
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .dsr-table-container {
