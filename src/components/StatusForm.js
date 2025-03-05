@@ -37,13 +37,6 @@ const StatusForm = () => {
     }
     setShowModal(false);
   };
-
-  const handleEditRow = (index) => {
-    setEditIndex(index);
-    setFormData(tasks[index]);
-    setShowModal(true);
-  };
-
   const handleTableEdit = (index, field, value) => {
     const updatedTasks = [...tasks];
     updatedTasks[index][field] = value;
@@ -75,7 +68,7 @@ const StatusForm = () => {
           </thead>
           <tbody>
             {tasks.map((task, index) => (
-              <tr key={index} onClick={() => handleEditRow(index)}>
+              <tr key={index} onClick={() => (index)}>
                 <td>{task.srNo}</td>
                 <td>
                   <input
